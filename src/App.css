@@ -1,0 +1,14 @@
+.Logo {
+  animation-name: rotate;
+  animation-duration: 12000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

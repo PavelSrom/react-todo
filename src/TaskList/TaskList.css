@@ -1,0 +1,62 @@
+.taskContainer {
+  width: 100%;
+  max-width: 960px;
+  border-radius: 6px;
+  margin: 40px auto 0 auto;
+}
+.taskList {
+  list-style-type: none;
+}
+.taskItem {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background: #666;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px #888;
+  animation-name: fadeIn;
+  animation-duration: 200ms;
+}
+.text {
+  font-size: 22px;
+}
+.cancelBtn {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 26px;
+  line-height: 20px;
+  transition: 200ms ease-out;
+}
+.cancelBtn:hover {
+  color: deepskyblue;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: 10px;
+  }
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
+}
+@media (max-width: 1280px) {
+  .taskContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .text,
+  .cancelBtn {
+    font-size: 18px;
+  }
+  .taskItem {
+    padding: 10px;
+  }
+}
